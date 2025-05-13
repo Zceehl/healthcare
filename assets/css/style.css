@@ -1,0 +1,252 @@
+/* Main Styles */
+:root {
+    --medical-blue: #1A75BC;
+    --healing-teal: #00A9A5;
+    --soft-white: #F8FBFC;
+    --light-grey: #E6ECF2;
+    --warm-grey: #64748B;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--soft-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navigation */
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.btn-primary {
+    background-color: var(--medical-blue);
+    border-color: var(--medical-blue);
+}
+
+.btn-primary:hover {
+    background-color: #1565a3;
+    border-color: #1565a3;
+}
+
+.text-primary {
+    color: var(--medical-blue) !important;
+}
+
+.bg-primary {
+    background-color: var(--medical-blue) !important;
+}
+
+/* Tables */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Appointments */
+.appointment-card {
+    border-left: 4px solid var(--medical-blue);
+}
+
+.appointment-card.completed {
+    border-left-color: var(--wellness-green);
+}
+
+.appointment-card.cancelled {
+    border-left-color: var(--soft-red);
+}
+
+/* Calendar */
+.calendar {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.calendar-day.today {
+    background-color: var(--light-grey);
+    border-color: var(--medical-blue);
+}
+
+.calendar-day.has-appointments {
+    background-color: var(--soft-white);
+    font-weight: bold;
+}
+
+/* Profile */
+.profile-header {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+/* Medical History */
+.medical-record {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.medical-record-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+/* Doctor Cards */
+.doctor-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 4px solid var(--light-grey);
+}
+
+.doctor-specialization {
+    color: var(--medical-blue);
+    font-weight: 600;
+}
+
+.doctor-qualification {
+    color: var(--warm-grey);
+    font-size: 0.9em;
+}
+
+.doctor-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--medical-blue);
+}
+
+.stat-label {
+    font-size: 0.8em;
+    color: var(--warm-grey);
+}
+
+.doctor-description {
+    font-size: 0.9em;
+    color: var(--warm-grey);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-grid {
+        gap: 5px;
+    }
+    
+    .calendar-day {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Loading Spinner */
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--light-grey);
+    border-top: 4px solid var(--medical-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 

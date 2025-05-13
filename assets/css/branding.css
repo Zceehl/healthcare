@@ -1,0 +1,234 @@
+:root {
+    /* Primary Colors */
+    --medical-blue: #1A75BC;
+    --healing-teal: #00A9A5;
+    
+    /* Secondary Colors */
+    --soft-white: #F8FBFC;
+    --light-grey: #E6ECF2;
+    --warm-grey: #64748B;
+    
+    /* Accent Colors */
+    --wellness-green: #2AC769;
+    --gentle-orange: #FF9F5A;
+    --soft-red: #EB5757;
+}
+
+/* Typography */
+body {
+    font-family: 'Open Sans', 'Nunito Sans', sans-serif;
+    background-color: var(--soft-white);
+    color: var(--warm-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--medical-blue);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-grey);
+    color: var(--medical-blue);
+}
+
+/* Branded Components */
+.btn-primary {
+    background-color: var(--medical-blue);
+    border-color: var(--medical-blue);
+}
+
+.btn-primary:hover {
+    background-color: #1565a3;
+    border-color: #1565a3;
+}
+
+.btn-success {
+    background-color: var(--wellness-green);
+    border-color: var(--wellness-green);
+}
+
+.btn-warning {
+    background-color: var(--gentle-orange);
+    border-color: var(--gentle-orange);
+    color: white;
+}
+
+.btn-danger {
+    background-color: var(--soft-red);
+    border-color: var(--soft-red);
+}
+
+.alert-success {
+    background-color: var(--wellness-green);
+    border-color: var(--wellness-green);
+    color: white;
+}
+
+.alert-warning {
+    background-color: var(--gentle-orange);
+    border-color: var(--gentle-orange);
+    color: white;
+}
+
+.alert-danger {
+    background-color: var(--soft-red);
+    border-color: var(--soft-red);
+    color: white;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card-header {
+    background-color: var(--medical-blue);
+    color: white;
+    border-bottom: none;
+}
+
+.badge.bg-primary {
+    background-color: var(--medical-blue) !important;
+}
+
+.badge.bg-success {
+    background-color: var(--wellness-green) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--gentle-orange) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--soft-red) !important;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: white;
+    border-right: 1px solid var(--light-grey);
+}
+
+.sidebar .nav-link {
+    color: var(--warm-grey);
+}
+
+.sidebar .nav-link:hover {
+    color: var(--medical-blue);
+    background-color: var(--light-grey);
+}
+
+.sidebar .nav-link.active {
+    color: var(--medical-blue);
+    background-color: var(--light-grey);
+}
+
+/* Form Elements */
+.form-control:focus {
+    border-color: var(--medical-blue);
+    box-shadow: 0 0 0 0.2rem rgba(26, 117, 188, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--medical-blue);
+    box-shadow: 0 0 0 0.2rem rgba(26, 117, 188, 0.25);
+}
+
+/* Links */
+a {
+    color: var(--medical-blue);
+}
+
+a:hover {
+    color: #1565a3;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background-color: var(--medical-blue);
+}
+
+/* Tables */
+.table thead th {
+    background-color: var(--light-grey);
+    color: var(--warm-grey);
+    border-bottom: 2px solid var(--medical-blue);
+}
+
+/* Custom Brand Elements */
+.brand-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--medical-blue);
+}
+
+.brand-subtitle {
+    color: var(--warm-grey);
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    color: var(--warm-grey);
+}
+
+/* Login/Register Specific Styles */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--soft-white);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.auth-logo {
+    font-size: 2.5rem;
+    color: var(--medical-blue);
+    margin-bottom: 1rem;
+}
+
+.auth-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+    color: var(--warm-grey);
+    margin-bottom: 2rem;
+} 
