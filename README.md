@@ -17,7 +17,6 @@ A comprehensive healthcare management system that allows patients to book appoin
 - Manage appointment schedule
 - View and update patient records
 - Set availability and working hours
-- View patient history
 - Manage medical records
 
 ### For Administrators
@@ -135,11 +134,3 @@ healthcare/
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, email support@medischedule.com or create an issue in the repository.
