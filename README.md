@@ -31,7 +31,7 @@ A comprehensive healthcare management system that allows patients to book appoin
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/healthcare.git
+git clone https://github.com/Zceehl/healthcare.git
 ```
 
 2. Set up the database:
